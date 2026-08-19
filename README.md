@@ -2,7 +2,7 @@
 
 **A studio that re-shoots your product photo, then writes the ad around it.**
 
-Live at **[luvley.ai](https://luvley.ai)** — metered against a credit ledger, taking card
+Live at **[luvley.ai](https://luvley.ai)**. Metered against a credit ledger, taking card
 payments. Built and run by one person.
 
 <p align="center">
@@ -20,7 +20,7 @@ isn't mine.
 
 The rare part is everything after it. **A copywriting system built on top of image-to-image,
 that a non-technical person can actually steer.** A jeweller shooting a ring on the kitchen
-table doesn't need another prompt box — they need to fix the one thing that came out wrong
+table doesn't need another prompt box. They need to fix the one thing that came out wrong
 without losing the rest of the picture, and then they need the words to run beside it.
 
 Everything below is what I built around the model calls to make that possible.
@@ -35,7 +35,7 @@ Every one of these started as a phone photograph on a desk, a table or a carpet.
 
 ![A phone photo goes in](docs/04-a-phone-photo-goes-in.png)
 
-The product has to survive the trip unchanged. That is the hard half — the cap knurl, the
+The product has to survive the trip unchanged. That is the hard half: the cap knurl, the
 glass thickness, the brushed channel down the ring. Identity survives while everything
 around it is replaced.
 
@@ -46,7 +46,7 @@ around it is replaced.
 ![The prompt architecture](docs/05-prompt-architecture.png)
 
 Nothing you type is sent as you typed it. Four blocks compose around it, and each one is
-conditional — a patch edit gets the seam laws, a poster gets the copy engine, nothing else
+conditional. A patch edit gets the seam laws, a poster gets the copy engine, nothing else
 carries either.
 
 ![Avoiding the median](docs/06-avoiding-the-median.png)
@@ -56,7 +56,7 @@ carries either.
 ![Quick Looks](docs/07-quick-looks.png)
 
 Saved recipes. Pick your industry, pick a Look, drop in a photo. 249 of them, because a
-fashion brief and a jewellery brief need genuinely different language — fashion 82,
+fashion brief and a jewellery brief need genuinely different language. Fashion 82,
 jewellery 67, product 33, lighting 30, beauty 28, art 9.
 
 Some are whole shots that run alone. Others are pieces that stack, so one Look's set can sit
@@ -66,11 +66,11 @@ under another Look's light.
 <tr>
 <td width="50%" align="center">
   <img src="docs/video/reel-interior.gif" width="100%" alt="An empty room staged as a warm living room, then the coffee table swapped twice"><br>
-  <sub><em>Spaces — an empty listing, staged</em></sub>
+  <sub><em>Spaces: an empty listing, staged</em></sub>
 </td>
 <td width="50%" align="center">
   <img src="docs/video/reel-fashion.gif" width="100%" alt="A fitting-room sample photo becomes a sunlit coastal terrace shoot"><br>
-  <sub><em>Fashion — a fitting-room photo, on location</em></sub>
+  <sub><em>Fashion: a fitting-room photo, on location</em></sub>
 </td>
 </tr>
 </table>
@@ -82,8 +82,8 @@ under another Look's light.
 ![Pieces, not presets](docs/08-quick-blocks.png)
 
 A Look isn't a preset in a dropdown. Some are whole shots meant to run alone; the rest are
-pieces, and pieces combine. Every piece belongs to a slot — Studio, Casting, Sets, Lighting,
-Camera & FX — and that's what keeps a stack coherent: one Look's set can sit under another
+pieces, and pieces combine. Every piece belongs to a slot: Studio, Casting, Sets, Lighting,
+Camera & FX. That is what keeps a stack coherent. one Look's set can sit under another
 Look's light because the two are answering different questions.
 
 You can write your own too. Save a block of art direction under a name and it stacks like
@@ -102,21 +102,21 @@ Look declares its own five angles instead of asking a model to be interesting.
 ![The studio](docs/10-the-studio.png)
 
 One canvas. The picture is the hero and the tools sit beside it. Every control is a thing a
-designer would want to change — not a setting.
+designer would want to change, not a setting.
 
 ## Fixing one thing
 
 ![Refinement](docs/11-refinement.png)
 
 Paint a mask over the part that's wrong and describe only that. Asking for a whole new image
-instead gives you a different bottle, a different backdrop and a different light — you'd be
+instead gives you a different bottle, a different backdrop and a different light. You would be
 gambling the parts you liked to fix the one you didn't.
 
 <p align="center">
   <img src="docs/video/reel-ring.gif" width="420" alt="A mask sweeps the ring finger and a referenced ring lands on it">
 </p>
 
-<p align="center"><em>Drop in a reference, mask the finger, and the ring lands on it — the rest of the photograph untouched.</em></p>
+<p align="center"><em>Drop in a reference, mask the finger, and the ring lands on it, the rest of the photograph untouched.</em></p>
 
 ### Three laws a patch has to obey
 
@@ -124,7 +124,7 @@ gambling the parts you liked to fix the one you didn't.
 
 These go out with every refinement, and each one exists because of a specific way the edit
 goes wrong. The one I'm proudest of: *mood words describe content, never pixels.* A sadder
-expression means changed brows, eyes and mouth — not cooler or darker pixels.
+expression means changed brows, eyes and mouth, not cooler or darker pixels.
 
 ## Two versions, no losing one
 
@@ -145,7 +145,7 @@ them off and on to see exactly what changed.
   <img src="docs/video/reel-layers.gif" width="620" alt="Refinement layers toggling on one at a time, a sketch resolving into a finished render">
 </p>
 
-<p align="center"><em>Background, clean linework, staff design, head redesign, colour, polish — each its own layer, each switchable.</em></p>
+<p align="center"><em>Background, clean linework, staff design, head redesign, colour, polish. Each its own layer, each switchable.</em></p>
 
 ## Finishing
 
@@ -170,7 +170,7 @@ product; expanding invents the room around it instead.
 
 ![Crop](docs/16-crop.png)
 
-And when cropping *is* the right answer, the aspect list is the one a designer expects —
+And when cropping *is* the right answer, the aspect list is the one a designer expects:
 square, 4:3 through 21:9, 3:4 through 9:21.
 
 ## Turn it into an ad
@@ -185,7 +185,7 @@ carrying a real aspect ratio.
 
 ![The design is its own control](docs/19-ad-design-control.png)
 
-Eighty-three layouts in six families, and every tile is a render rather than a wireframe —
+Eighty-three layouts in six families, and every tile is a render rather than a wireframe.
 what you pick is what you get. The wording and the layout are decided by different things on
 purpose, so once the copy is written you can change only how it looks.
 
@@ -212,7 +212,7 @@ licenses it, and it drops the line when nobody did.
 
 The end-to-end tests drive the real server, and that server holds real image-model keys in
 production. So the test environment isn't a copy of a developer's with the dangerous keys
-removed — it starts as an empty object, and only the variables Node needs to boot are copied
+removed. It starts as an empty object, and only the variables Node needs to boot are copied
 in. A list of keys to *delete* would have failed the first time somebody added a provider.
 
 ---
@@ -224,9 +224,9 @@ self-contained and are the ones worth reading:
 
 | File | What it is |
 | --- | --- |
-| [`inpaintBrushMath.ts`](code/inpaintBrushMath.ts) | Pressure, taper, hardness and spacing — the arithmetic behind the brush |
+| [`inpaintBrushMath.ts`](code/inpaintBrushMath.ts) | Pressure, taper, hardness and spacing. The arithmetic behind the brush |
 | [`inpaintRectMath.ts`](code/inpaintRectMath.ts) | The dirty-rectangle algebra that makes undo cheap |
-| [`route-table-fingerprint.mjs`](code/route-table-fingerprint.mjs) | Boots the real server, walks the router in order and hashes every handler — how a 5,300-line file was split into fifteen pieces and *proved* unchanged |
+| [`route-table-fingerprint.mjs`](code/route-table-fingerprint.mjs) | Boots the real server, walks the router in order and hashes every handler. How a 5,300-line file was split into fifteen pieces and *proved* unchanged |
 | [`fleet.mjs`](code/fleet.mjs) | The orchestrator I built to run coding agents in parallel, one per isolated worktree |
 | [`ui-evidence.mjs`](code/ui-evidence.mjs) | Renders before/after evidence sheets, and exits non-zero if a row proves nothing |
 
