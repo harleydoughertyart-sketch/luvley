@@ -1,83 +1,167 @@
-﻿# Luvley
+# Luvley
 
-A web studio for people who sell things and cannot afford a photographer.
+**A studio that re-shoots your product photo, then writes the ad around it.**
 
-Open a photo you took on your phone — a ring on the kitchen table, a bag on the carpet —
-pick a Look, and it comes back shot the way that Look describes: the set, the surface, the
-light. The product itself has to survive the trip unchanged. That is the hard half.
+Live at **[luvley.ai](https://luvley.ai)** — metered against a credit ledger, taking card
+payments. Built and run by one person.
 
-Live at **[luvley.ai](https://luvley.ai)**. It meters every picture against a credit ledger
-and takes card payments. I built all of it — the editor, the painting canvas, the prompt
-catalogue, the server, the billing, and the agent tooling I used to work on it.
+<p align="center">
+  <img src="docs/video/reel-candle.gif" width="520" alt="A candle on a kitchen counter becomes a warm studio shot, then a finished ad">
+</p>
 
-![What it makes](docs/02-what-it-makes.png)
+<p align="center"><em>A candle on a kitchen counter. Four sentences, one at a time. Then the ad writes and lays itself out.</em></p>
 
-## A phone photo goes in
+---
 
-![Before and after](docs/03-a-phone-photo-goes-in.png)
+## Why this exists
 
-## The studio
+Plenty of products will generate you an image. That part is a model call, and the model
+isn't mine.
 
-![The studio](docs/04-the-studio.png)
+The rare part is everything after it. **A copywriting system built on top of image-to-image,
+that a non-technical person can actually steer.** A jeweller shooting a ring on the kitchen
+table doesn't need another prompt box — they need to fix the one thing that came out wrong
+without losing the rest of the picture, and then they need the words to run beside it.
 
-Everything happens on one canvas. The image is the hero; the tools sit beside it rather than
-on top of it.
+Everything below is what I built around the model calls to make that possible.
+
+![Who it is for](docs/02-who-its-for.png)
+
+## What it makes
+
+![What it makes](docs/03-what-it-makes.png)
+
+Every one of these started as a phone photograph on a desk, a table or a carpet.
+
+![A phone photo goes in](docs/04-a-phone-photo-goes-in.png)
+
+The product has to survive the trip unchanged. That is the hard half — the cap knurl, the
+glass thickness, the brushed channel down the ring. Identity survives while everything
+around it is replaced.
+
+---
+
+## What happens between your sentence and the model
+
+![The prompt architecture](docs/05-prompt-architecture.png)
+
+Nothing you type is sent as you typed it. Four blocks compose around it, and each one is
+conditional — a patch edit gets the seam laws, a poster gets the copy engine, nothing else
+carries either.
+
+![Avoiding the median](docs/06-avoiding-the-median.png)
 
 ## Quick Looks
 
-![Quick Looks](docs/05-quick-looks.png)
+![Quick Looks](docs/07-quick-looks.png)
 
-249 saved recipes across six industries, because a fashion brief and a jewellery brief need
-genuinely different language. Some run alone. Others stack.
+Saved recipes. Pick your industry, pick a Look, drop in a photo. 249 of them, because a
+fashion brief and a jewellery brief need genuinely different language — fashion 82,
+jewellery 67, product 33, lighting 30, beauty 28, art 9.
 
-## Refinement
+Some are whole shots that run alone. Others are pieces that stack, so one Look's set can sit
+under another Look's light.
 
-![Refinement](docs/06-refinement.png)
+<table>
+<tr>
+<td width="50%" align="center">
+  <img src="docs/video/reel-interior.gif" width="100%" alt="An empty room staged as a warm living room, then the coffee table swapped twice"><br>
+  <sub><em>Spaces — an empty listing, staged</em></sub>
+</td>
+<td width="50%" align="center">
+  <img src="docs/video/reel-fashion.gif" width="100%" alt="A fitting-room sample photo becomes a sunlit coastal terrace shoot"><br>
+  <sub><em>Fashion — a fitting-room photo, on location</em></sub>
+</td>
+</tr>
+</table>
 
-When one part of a picture is wrong, you paint a mask over that part and describe only that.
-Asking for a whole new image instead would give you a different bottle, a different backdrop
-and a different light — you would be gambling the parts you liked to fix the one you did not.
+---
 
-The brush is a real one: pressure, taper, hardness and spacing, painted a frame at a time,
-with undo that stores only the rectangle a stroke actually touched.
+## The studio
 
-![Layers](docs/07-layers.png)
+![The studio](docs/08-the-studio.png)
 
-Every refinement lands as its own layer above the original, which is never painted on.
+One canvas. The picture is the hero and the tools sit beside it. Every control is a thing a
+designer would want to change — not a setting.
 
-## Turn Into Ad
+## Fixing one thing
 
-![Turn Into Ad](docs/08-turn-into-ad.png)
+![Refinement](docs/09-refinement.png)
 
-A finished picture becomes the brief. The planner reads the image, proposes five directions,
-and lays each one out for a real placement — seven of them, each with the aspect ratio the
-platform actually wants.
+Paint a mask over the part that's wrong and describe only that. Asking for a whole new image
+instead gives you a different bottle, a different backdrop and a different light — you'd be
+gambling the parts you liked to fix the one you didn't.
 
-### What it will not say
+<p align="center">
+  <img src="docs/video/reel-ring.gif" width="420" alt="A mask sweeps the ring finger and a referenced ring lands on it">
+</p>
 
-![The claim gate](docs/09-what-it-will-not-say.png)
+<p align="center"><em>Drop in a reference, mask the finger, and the ring lands on it — the rest of the photograph untouched.</em></p>
 
-The ad writer may invent a customer or an occasion. It may not invent a material, a
-certification, a price or a result. A checker reads every finished line for fact-shaped
-language and asks — not whether the sentence is true, but whether the seller supplied
-anything that licenses it. If nobody did, the line is dropped.
+### Three laws a patch has to obey
+
+![The image-to-image laws](docs/10-image-to-image-laws.png)
+
+These go out with every refinement, and each one exists because of a specific way the edit
+goes wrong. The one I'm proudest of: *mood words describe content, never pixels.* A sadder
+expression means changed brows, eyes and mouth — not cooler or darker pixels.
+
+## Layers
+
+![Layers](docs/11-layers.png)
+
+Every refinement lands as its own layer above the original, which is never painted on. Turn
+them off and on to see exactly what changed.
+
+<p align="center">
+  <img src="docs/video/reel-layers.gif" width="620" alt="Refinement layers toggling on one at a time, a sketch resolving into a finished render">
+</p>
+
+<p align="center"><em>Background, clean linework, staff design, head redesign, colour, polish — each its own layer, each switchable.</em></p>
+
+## Finishing
+
+The last mile is the part people give up on: the picture is right but it's flat. Clarity,
+glow, punch-in and a compare wipe are all here, so nobody has to open another application to
+warm up a render.
+
+<p align="center">
+  <img src="docs/video/finish-demo.gif" width="620" alt="Finish mode: clarity, punch-in, glow sliders and a compare wipe">
+</p>
+
+---
+
+## Turn it into an ad
+
+![Turn into ad](docs/12-turn-into-ad.png)
+
+The photograph is also the brief. You type anything true about the product, pick where the ad
+will run, and it writes the copy and lays it out over the picture. Seven placements, each
+carrying a real aspect ratio.
+
+![CopyEngine](docs/13-copy-engine.png)
+
+![What it will not say](docs/14-what-it-will-not-say.png)
+
+It never asks whether a sentence is true. It asks whether the seller supplied something that
+licenses it, and it drops the line when nobody did.
+
+---
 
 ## How it is put together
 
-![Architecture](docs/11-architecture.png)
+![Architecture](docs/15-architecture.png)
 
 ## The tests cannot spend money
 
-![Test isolation](docs/10-under-it.png)
+![Test isolation](docs/16-under-it.png)
 
 The end-to-end tests drive the real server, and that server holds real image-model keys in
-production. So the test environment is not a copy of a developer's environment with the
-dangerous keys removed — it starts as an empty object, and only the handful of variables Node
-needs to boot are copied in.
+production. So the test environment isn't a copy of a developer's with the dangerous keys
+removed — it starts as an empty object, and only the variables Node needs to boot are copied
+in. A list of keys to *delete* would have failed the first time somebody added a provider.
 
-A list of keys to *delete* would have failed the first time somebody added a provider: the new
-key would not be on the list, it would flow straight through, and a test run would quietly bill
-a real account.
+---
 
 ## Code
 
@@ -89,7 +173,7 @@ self-contained and are the ones worth reading:
 | [`inpaintBrushMath.ts`](code/inpaintBrushMath.ts) | Pressure, taper, hardness and spacing — the arithmetic behind the brush |
 | [`inpaintRectMath.ts`](code/inpaintRectMath.ts) | The dirty-rectangle algebra that makes undo cheap |
 | [`route-table-fingerprint.mjs`](code/route-table-fingerprint.mjs) | Boots the real server, walks the router in order and hashes every handler — how a 5,300-line file was split into fifteen pieces and *proved* unchanged |
-| [`fleet.mjs`](code/fleet.mjs) | The orchestrator I built to run coding agents in parallel, one per isolated worktree. Its header comment is the design document |
+| [`fleet.mjs`](code/fleet.mjs) | The orchestrator I built to run coding agents in parallel, one per isolated worktree |
 | [`ui-evidence.mjs`](code/ui-evidence.mjs) | Renders before/after evidence sheets, and exits non-zero if a row proves nothing |
 
 ## Built with
@@ -99,4 +183,5 @@ Firestore · Cloud Run · Stripe · Google Gemini and OpenAI image models · Pla
 
 ---
 
-The screenshots are the real editor. The pictures are real output from it.
+The screenshots are the real editor, driven by a browser against a credential-free local
+backend. The pictures are real output from the live product.
