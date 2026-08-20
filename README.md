@@ -49,11 +49,9 @@ Nothing you type is sent as you typed it. Four blocks compose around it, and eac
 conditional. A patch edit gets the seam laws, a poster gets the copy engine, nothing else
 carries either.
 
-![Avoiding the median](docs/06-avoiding-the-median.webp)
-
 ## Quick Looks
 
-![Quick Looks](docs/07-quick-looks.webp)
+![Quick Looks](docs/06-quick-looks.webp)
 
 Saved recipes. Pick your industry, pick a Look, drop in a photo. 249 of them, because a
 fashion brief and a jewellery brief need genuinely different language. Fashion 82,
@@ -79,7 +77,7 @@ under another Look's light.
 
 ## Pieces, not presets
 
-![Pieces, not presets](docs/08-quick-blocks.webp)
+![Pieces, not presets](docs/07-quick-blocks.webp)
 
 A Look isn't a preset in a dropdown. Some are whole shots meant to run alone; the rest are
 pieces, and pieces combine. Every piece belongs to a slot: Studio, Casting, Sets, Lighting,
@@ -91,7 +89,7 @@ everything else, or describe what you want in a sentence and let the app draft i
 
 ## More than one good answer
 
-![Variations](docs/09-variations.webp)
+![Variations](docs/08-variations.webp)
 
 One edit note becomes several genuinely different directions rather than five rerolls of the
 same idea. The rule behind it, from the skill writer: **named angles beat "be diverse."** A
@@ -99,14 +97,14 @@ Look declares its own five angles instead of asking a model to be interesting.
 
 ## The studio
 
-![The studio](docs/10-the-studio.webp)
+![The studio](docs/09-the-studio.webp)
 
 One canvas. The picture is the hero and the tools sit beside it. Every control is a thing a
 designer would want to change, not a setting.
 
 ## Fixing one thing
 
-![Refinement](docs/11-refinement.webp)
+![Refinement](docs/10-refinement.webp)
 
 Paint a mask over the part that's wrong and describe only that. Asking for a whole new image
 instead gives you a different bottle, a different backdrop and a different light. You would be
@@ -120,7 +118,7 @@ gambling the parts you liked to fix the one you didn't.
 
 ### Three laws a patch has to obey
 
-![The image-to-image laws](docs/13-image-to-image-laws.webp)
+![The image-to-image laws](docs/12-image-to-image-laws.webp)
 
 These go out with every refinement, and each one exists because of a specific way the edit
 goes wrong. The one I'm proudest of: *mood words describe content, never pixels.* A sadder
@@ -128,7 +126,7 @@ expression means changed brows, eyes and mouth, not cooler or darker pixels.
 
 ## Two versions, no losing one
 
-![Compare versions](docs/12-compare.webp)
+![Compare versions](docs/11-compare.webp)
 
 A generated result and the photo it came from, side by side, with three ways out: take the new
 one, keep the old one, or put the new one on its own layer and decide later. Nothing is
@@ -151,7 +149,7 @@ The last mile is the part people give up on: the picture is right but it's flat.
 glow, punch-in and a compare wipe are all here, so nobody has to open another application to
 warm up a render.
 
-![Finish](docs/16-finish.webp)
+![Finish](docs/15-finish.webp)
 
 <p align="center">
   <img src="docs/video/finish-demo.webp" width="620" alt="Finish mode: clarity, punch-in, glow sliders and a compare wipe">
@@ -161,19 +159,19 @@ warm up a render.
 
 ## Making the picture bigger than it was shot
 
-![Expand](docs/14-expand.webp)
+![Expand](docs/13-expand.webp)
 
 A phone photo is the wrong shape for almost every placement. Cropping to fit throws away the
 product; expanding invents the room around it instead.
 
-![Crop](docs/15-crop.webp)
+![Crop](docs/14-crop.webp)
 
 And when cropping *is* the right answer, the aspect list is the one a designer expects:
 square, 4:3 through 21:9, 3:4 through 9:21.
 
 ## Turn it into an ad
 
-![Turn into ad](docs/17-turn-into-ad.webp)
+![Turn into ad](docs/16-turn-into-ad.webp)
 
 The photograph is also the brief. You type anything true about the product, pick where the ad
 will run, and it writes the copy and lays it out over the picture. Seven placements, each
@@ -181,7 +179,7 @@ carrying a real aspect ratio.
 
 ### The design is its own control
 
-![The design is its own control](docs/18-ad-design-control.webp)
+![The design is its own control](docs/17-ad-design-control.webp)
 
 Eighty-three layouts in six families, and every tile is a render rather than a wireframe.
 what you pick is what you get. The wording and the layout are decided by different things on
@@ -191,9 +189,9 @@ purpose, so once the copy is written you can change only how it looks.
 the layout only dresses it. Keeping those two apart is what stops a design choice leaking into
 what the ad says.
 
-![CopyEngine](docs/19-copy-engine.webp)
+![CopyEngine](docs/18-copy-engine.webp)
 
-![What it will not say](docs/20-what-it-will-not-say.webp)
+![What it will not say](docs/19-what-it-will-not-say.webp)
 
 It never asks whether a sentence is true. It asks whether the seller supplied something that
 licenses it, and it drops the line when nobody did.
@@ -202,11 +200,11 @@ licenses it, and it drops the line when nobody did.
 
 ## How it is put together
 
-![Architecture](docs/21-architecture.webp)
+![Architecture](docs/20-architecture.webp)
 
 ## The tests cannot spend money
 
-![Test isolation](docs/22-under-it.webp)
+![Test isolation](docs/21-under-it.webp)
 
 The end-to-end tests drive the real server, and that server holds real image-model keys in
 production. So the test environment isn't a copy of a developer's with the dangerous keys

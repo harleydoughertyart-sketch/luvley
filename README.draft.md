@@ -49,8 +49,6 @@ Nothing you type is sent as you typed it. Four blocks compose around it, and eac
 conditional. A patch edit gets the seam laws, a poster gets the copy engine, nothing else
 carries either.
 
-![Avoiding the median](docs/@avoiding-the-median.png)
-
 ## Quick Looks
 
 ![Quick Looks](docs/@quick-looks.png)
