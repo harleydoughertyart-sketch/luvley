@@ -6,7 +6,7 @@ Live at **[luvley.ai](https://luvley.ai)**. Metered against a credit ledger, tak
 payments. Built and run by one person.
 
 <p align="center">
-  <img src="docs/video/reel-candle.gif" width="520" alt="A candle on a kitchen counter becomes a warm studio shot, then a finished ad">
+  <img src="docs/video/reel-candle.webp" width="520" alt="A candle on a kitchen counter becomes a warm studio shot, then a finished ad">
 </p>
 
 <p align="center"><em>A candle on a kitchen counter. Four sentences, one at a time. Then the ad writes and lays itself out.</em></p>
@@ -65,11 +65,11 @@ under another Look's light.
 <table>
 <tr>
 <td width="50%" align="center">
-  <img src="docs/video/reel-interior.gif" width="100%" alt="An empty room staged as a warm living room, then the coffee table swapped twice"><br>
+  <img src="docs/video/reel-interior.webp" width="100%" alt="An empty room staged as a warm living room, then the coffee table swapped twice"><br>
   <sub><em>Spaces: an empty listing, staged</em></sub>
 </td>
 <td width="50%" align="center">
-  <img src="docs/video/reel-fashion.gif" width="100%" alt="A fitting-room sample photo becomes a sunlit coastal terrace shoot"><br>
+  <img src="docs/video/reel-fashion.webp" width="100%" alt="A fitting-room sample photo becomes a sunlit coastal terrace shoot"><br>
   <sub><em>Fashion: a fitting-room photo, on location</em></sub>
 </td>
 </tr>
@@ -113,7 +113,7 @@ instead gives you a different bottle, a different backdrop and a different light
 gambling the parts you liked to fix the one you didn't.
 
 <p align="center">
-  <img src="docs/video/reel-ring.gif" width="420" alt="A mask sweeps the ring finger and a referenced ring lands on it">
+  <img src="docs/video/reel-ring.webp" width="420" alt="A mask sweeps the ring finger and a referenced ring lands on it">
 </p>
 
 <p align="center"><em>Drop in a reference, mask the finger, and the ring lands on it, the rest of the photograph untouched.</em></p>
@@ -140,7 +140,7 @@ Every refinement lands as its own layer above the original, which is never paint
 them off and on to see exactly what changed.
 
 <p align="center">
-  <img src="docs/video/reel-layers.gif" width="620" alt="Refinement layers toggling on one at a time, a sketch resolving into a finished render">
+  <img src="docs/video/reel-layers.webp" width="620" alt="Refinement layers toggling on one at a time, a sketch resolving into a finished render">
 </p>
 
 <p align="center"><em>Background, clean linework, staff design, head redesign, colour, polish. Each its own layer, each switchable.</em></p>
@@ -154,7 +154,7 @@ warm up a render.
 ![Finish](docs/@finish.png)
 
 <p align="center">
-  <img src="docs/video/finish-demo.gif" width="620" alt="Finish mode: clarity, punch-in, glow sliders and a compare wipe">
+  <img src="docs/video/finish-demo.webp" width="620" alt="Finish mode: clarity, punch-in, glow sliders and a compare wipe">
 </p>
 
 ---
