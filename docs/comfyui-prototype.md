@@ -9,6 +9,8 @@ Screenshot first, short explanation second. The command hub is shown as the prim
 surface, the final compare node as the review endpoint. The one-node prompt preset blocks are
 listed but not expanded, because they are instruction snippets rather than functional routes.
 
+![Concept Art Studio 2.0 open in ComfyUI](prototype/00-graph-overview.webp)
+
 ## At a glance
 
 | Item | Count |

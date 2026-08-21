@@ -215,10 +215,19 @@ in. A list of keys to *delete* would have failed the first time somebody added a
 
 ## Where this started
 
-![The command hub of the ComfyUI prototype](docs/prototype/00-command-hub.webp)
+![Concept Art Studio 2.0 open in ComfyUI — 467 nodes at 8% zoom](docs/prototype/00-graph-overview.webp)
 
 Before Luvley was software it was a ComfyUI graph — **467 nodes, 421 links, 56 groups** —
-called Concept Art Studio 2.0. The screenshot above is its control panel.
+called Concept Art Studio 2.0. That is the whole of it above, at 8% zoom, with the node list
+open on the right.
+
+<sub>The missing-node-pack warning is expected and honest: the API branches are hosted nodes
+from the RunningHub era. The <a href="docs/comfyui-prototype.md">atlas</a> says exactly what
+resolves and what does not.</sub>
+
+It also had a control panel, and that is the part that matters:
+
+![The command hub](docs/prototype/00-command-hub.webp)
 
 Those columns are Fast Groups Muter panels. Each row mutes or unmutes a branch of the graph,
 so a stack of yes/no toggles became a command surface: pick a model, pick a prompt operation,
