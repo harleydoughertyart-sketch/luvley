@@ -213,6 +213,47 @@ in. A list of keys to *delete* would have failed the first time somebody added a
 
 ---
 
+## Where this started
+
+![The command hub of the ComfyUI prototype](docs/prototype/00-command-hub.webp)
+
+Before Luvley was software it was a ComfyUI graph — **467 nodes, 421 links, 56 groups** —
+called Concept Art Studio 2.0. The screenshot above is its control panel.
+
+Those columns are Fast Groups Muter panels. Each row mutes or unmutes a branch of the graph,
+so a stack of yes/no toggles became a command surface: pick a model, pick a prompt operation,
+pick an operation, pick an action. **The graph was already trying to be an application.** It
+just made whoever used it hold four hundred nodes in their head to get one picture out.
+
+Read those panels against the shipped product and the lineage is not subtle.
+
+| Panel in the graph | What it became |
+| --- | --- |
+| **Model** — Nano Banana Pro, Nano Banana Cheap, Qwen Edit | The generation presets behind Create |
+| **Prompts Ops** — Enhanced Prompt, Outpaint Caption, Variation Gen | Enhance, and the variation cards |
+| **Operations** — InPaint, Mask Crop, Composite Masked, Bilateral Filter | Refinement: the working canvas, the draft mask, the stacked patch layers |
+| **Actions** — Materializer, Stylerizer, Turn Around Extractor | Skills, and the Looks that run alone |
+| **Art Styles · Lighting · Background** | Three separate stackable axes — which is the whole idea behind the Quick Looks slots |
+
+Thirty more groups in there are single-node blocks of saved art direction. Those are Quick
+Blocks now.
+
+**A node graph is a wonderful place to find out what you are building and a poor place to
+ship it from.** Every toggle above is global state with no owner. Nothing validates an input,
+so a bad image fails somewhere deep and quietly. There is no per-user anything, no way to
+meter a run, and no way to fail politely at somebody who is paying. Twenty-five of those
+groups are typed server routes now — and those four muter panels are the reason the app has
+presets, operations and stackable Looks at all, rather than one prompt box.
+
+**[The full atlas — all 25 functional groups, one at a time →](docs/comfyui-prototype.md)**
+
+The workflow ships with this repository:
+[`Concept-Art-Studio-2.0.workflow.json`](workflow/Concept-Art-Studio-2.0.workflow.json),
+627 KB, unmodified. It will not run out of the box — the API branches are hosted nodes from
+the RunningHub era — so it is published as architecture, not as something to install.
+
+---
+
 ## Code
 
 The product is commercial, so the application source stays private. These five modules are
@@ -235,3 +276,7 @@ Firestore · Cloud Run · Stripe · Google Gemini and OpenAI image models · Pla
 
 The screenshots are the real editor, driven by a browser against a credential-free local
 backend. The pictures are real output from the live product.
+
+Luvley is a commercial product and this repository carries no licence: the code and images
+here are published to be read, not reused. Ask me if you want to do something with any of it
+— [harleydoughertyart@gmail.com](mailto:harleydoughertyart@gmail.com).

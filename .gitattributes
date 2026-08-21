@@ -1,0 +1,5 @@
+# The workflow JSON is published with a SHA-256 in the docs.
+# Any line-ending conversion would change its bytes and break that hash.
+workflow/** -text
+*.webp binary
+*.zip binary
