@@ -234,6 +234,9 @@ so a stack of yes/no toggles became a command surface: pick a model, pick a prom
 pick an operation, pick an action. **The graph was already trying to be an application.** It
 just made whoever used it hold four hundred nodes in their head to get one picture out.
 
+Along the bottom edge of that shot, half out of frame, sit **Base Image** and its reference
+slots — four `LoadImage` nodes, which are still four reference slots in the app today.
+
 Read those panels against the shipped product and the lineage is not subtle.
 
 | Panel in the graph | What it became |
